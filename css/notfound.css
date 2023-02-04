@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+body
+{
+    height: auto;
+}
+section
+{
+    overflow: hidden;
+}
+.head{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+.head header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.6s;
+}
+.head header .logo{
+    position: relative;
+    color:#fff;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s
+
+}
+.head header .logo span{
+    font-weight: 600;
+}
+
+.head header .logo img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    -webkit-box-reflect: below 6px linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.185));
+    margin-right: 10px;
+
+}
+
+
+
+
+
+.underbanner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(90deg, #00adb6, #6c16b3 ); */
+    background: #111;
+    opacity: 0.65;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+
+.slim-banner{
+    width: 80%;
+}
+.banner img{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    object-fit: cover;
+    z-index: -1 ;
+}
+.banner .content{
+
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 150px;
+    border-right: solid 1px #02aee2b2;
+
+}
+
+
+.banner .content h1{
+    text-align: left;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.banner .content h2
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.box h3
+{
+    font-size: 32px;
+    letter-spacing: 2px;
+    color:rgb(245, 245, 245);
+    margin: 10px;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+}
+.banner .content p{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+
+
+/*BUTTONS*/
+.back-to-home
+{   position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+
+
+
+.back-to-home a{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border: 2px solid #f5552d;
+    background:  #f5552d;
+
+}
+
+
+
+.back-to-home a::before
+{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%) rotate(45deg);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transition: 0.4s;
+
+}
+.back-to-home a:hover::before
+{
+    transform: translate(-40%, -50%) rotate(45deg);
+    transition: 0.4s;
+}
+
+
+
+.quickLinks
+{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 150px;
+
+}
+.quickLinks ul 
+{
+    padding-top: 20px;
+}
+.quickLinks ul li
+{
+    list-style: none;
+}
+
+.quickLinks ul li a
+{
+    color: rgb(0, 219, 235);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+    color: #fff;
+}
+
+@media(max-width: 767px)
+{
+    .banner .content
+    {
+        padding:50px;
+    }
+}
+
+@media(max-width: 480px)
+{
+    .banner .content
+    {
+        padding: 20px;
+    }
+    .banner .content h1{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 2px;
+
+    
+    }
+    .banner .content h2
+    {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 1px;
+    }
+    
+    .banner .content p{
+        text-align: left;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

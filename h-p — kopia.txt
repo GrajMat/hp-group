@@ -1,0 +1,10 @@
+#Przekierowanie na https
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://h-p.group
+#Ustawienie strony głównej
+DirectoryIndex index.html
+#blokada przeglądania katalogów
+Options -Indexes
+#przekierowanie na własną stronę błędów
+ErrorDocument 404 https://h-p.group/404.htm

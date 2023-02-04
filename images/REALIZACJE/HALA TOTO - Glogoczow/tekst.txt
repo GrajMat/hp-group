@@ -1,0 +1,4 @@
+Projekt: Budowa hali przemys³owej zak³adu "TOTO"
+Lokalizacja: G³ogoczów
+Zakres projektu: Projekt budowlany, projekt wykonawczy, projekt warsztatowy
+Termin realizacji: 2020 r. 
