@@ -1579,9 +1579,10 @@ section {
     letter-spacing: 0.2em;
     margin-bottom: 40px;
     text-align: center;
+    margin: 0 auto;
 }
 
-.portfolio-content .portfolio-container p {
+.portfolio-content .portfolio-container .realization-desc {
     position: relative;
     width: 100%;
     font-size: 0.9em;
@@ -1629,7 +1630,19 @@ section {
 }
 
 .portfolio-container .property-desc {
-    text-transform: capitalize !important;
+    margin-top: 10px;
+}
+
+#nieruchomosci .portfolio-content .portfolio-container {
+    align-items: flex-start !important;
+}
+
+#nieruchomosci ul {
+    padding-left: 20px;
+}
+
+#nieruchomosci iframe {
+    margin: 0 auto;
 }
 
 .portfolio-container p::before {
