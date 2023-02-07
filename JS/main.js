@@ -188,6 +188,10 @@ $(document).ready(function () {
         $('.portfolio-bg').fadeOut(300, function () {
         });
     });
+    $('.portfolio-bg').on('click', function () {
+        $('.portfolio-bg').fadeOut(300, function () {
+        });
+    });
 
 
 
